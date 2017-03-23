@@ -1,0 +1,69 @@
+body{
+  font-family: lulo clean;
+  color: #2e2e2e;
+  background-color: #9ce4e8;
+}
+
+.contenido{
+  width: 400px;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.result{
+  background-color: #2e2e2e;
+}
+
+.textNum{
+  font-family: lulo clean;
+  color: #74b9af;
+  text-align: right;
+
+}
+
+.operador{
+  background-color: #74b9af;
+}
+
+
+.result:hover{
+  background: #2e2e2e;
+  color: #c2c2c2;
+}
+
+.oper{
+  background: #c2c2c2;
+  font-family: lulo clean;
+  color: #2e2e2e;
+}
+
+.oper:hover{
+  background: #c2c2c2;
+}
+
+table{
+  height: 400px;
+  text-align: center;
+  font-family: lulo clean;
+  background-color: #eeb5b5; /*color rosa*/
+  border: 0px solid #5e5e5e;
+  border-collapse: collapse;
+}
+
+td{
+  border: 2px solid #d4d4d4;
+}
+
+td:hover{
+  background: #e48686;
+
+}
+
+input {
+  background: transparent;
+  font-family: lulo clean;
+  font-size: 20px;
+  border: 0px;
+  width: 100%;
+  height: 100%;
+}
