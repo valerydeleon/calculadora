@@ -8,53 +8,64 @@
   <body>
 
     <div class="contenido" align="center">
-      <h1>Calculadora<br>trucutru</h1>
 
-      <table >
+      <table class="imagen" cellpadding="30px" align="center">
+        <tr>
+          <td class="imagen1">
+            <h1>Javacornias<br>Calculator</h1>
+          </td>
+          <td class="imagen1">
+            <image src="imagenes/javacalc.png" >
+          </td>
+      </table>
+
+
+      <table class="tabla">
 
         <tr>
-          <td class="result" colspan="4" ><input type="textfield" value="" id="resultado" class="textNum" ></td>
+          <td class="result" colspan="4" ><input type="textfield" value="" id="resultado" class="textNum" placeholder="Resultado"></td>
         </tr>
 
         <tr>
-          <td class="oper" colspan="4" ><input  value="" id="operacion" ></td>
+          <td class="oper" colspan="4" ><input  value="" id="operacion" class="textNum2" placeholder="Operación" ></td>
         </tr>
 
         <tr>
-          <td> <input type="button" id="btnC" value="c" onkeypress="" onclick="borrar();" class="boton" ></td>
-          <td class="operador" > <input type="button" id="btnNegativo" value="+/-" onkeypress="" onclick="" class="boton" ></td>
-          <td class="operador" > <input type="button" id="btnModulo" value="%" onkeypress="" onclick="" class="boton" ></td>
-          <td class="operador" > <input type="button" id="btnDivision" value="/" onkeypress="" onclick="" class="boton" ></td>
+          <td> <input type="button" id="btnC" value="c" onclick="borrar();" class="boton" ></td>
+          <td class="operador" > <input type="button" id="btnNegativo" value="+/-" onclick="mostrarNumero(this.value)" class="boton" ></td>
+          <td class="operador" > <input type="button" id="btnModulo" value="%" onclick="mostrarNumero(this.value)" class="boton" ></td>
+          <td class="operador" > <input type="button" id="btnDivision" value="/" onclick="mostrarNumero(this.value)" class="boton" ></td>
         </tr>
 
         <tr>
-          <td> <input type="button"  id="1" value="1" onkeypress="" onclick="mostrarNumero(1);" class="boton" ></td>
-          <td> <input type="button" id="btn2" value="2" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
-          <td> <input type="button" id="btn3" value="3" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
-          <td class="operador" > <input type="button" id="btnMult" value="*" onkeypress="" onclick="" class="boton" ></td>
+          <td> <input type="button"  id="1" value="1" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td> <input type="button" id="btn2" value="2" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td> <input type="button" id="btn3" value="3" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td class="operador" > <input type="button" id="btnMult" value="x" onclick="mostrarNumero(this.value)" class="boton" ></td>
         </tr>
 
         <tr>
-          <td> <input type="button" id="btn4" value="4" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
-          <td> <input type="button" id="btn5" value="5" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
-          <td> <input type="button" id="btn6" value="6" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
-          <td class="operador" > <input type="button" id="btnMenos" value="-" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
+          <td> <input type="button" id="btn4" value="4" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td> <input type="button" id="btn5" value="5" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td> <input type="button" id="btn6" value="6" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td class="operador" > <input type="button" id="btnMenos" value="-" onclick="mostrarNumero(this.value);" class="boton" ></td>
         </tr>
 
         <tr>
-          <td> <input type="button" id="btn7" value="7" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
-          <td> <input type="button" id="btn8" value="8" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
-          <td> <input type="button" id="btn9" value="9" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
-          <td class="operador" > <input type="button" id="btnMas" value="+" onkeypress="" onclick="" class="boton" ></td>
+          <td> <input type="button" id="btn7" value="7" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td> <input type="button" id="btn8" value="8" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td> <input type="button" id="btn9" value="9" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td class="operador" > <input type="button" id="btnMas" value=" + " onclick="mostrarNumero(this.value);" class="boton" ></td>
         </tr>
 
         <tr>
-          <td colspan="2" > <input type="button" id="btn0" value="0" onkeypress="" onclick="mostrar(this.value);" class="boton" ></td>
-          <td> <input type="button" id="btnPunto" value="." onkeypress="" onclick="" class="boton" ></td>
-          <td class="operador" > <input type="button" id="btnIgual" value="=" onkeypress="" onclick="" class="boton" ></td>
+          <td colspan="2" > <input type="button" id="btn0" value="0" onclick="mostrarNumero(this.value);" class="boton" ></td>
+          <td> <input type="button" id="btnPunto" value="." onclick="mostrarNumero(this.value)" class="boton" ></td>
+          <td class="operador" > <input type="button" id="btnIgual" value="=" onclick="almacenar();" class="boton" ></td>
         </tr>
 
       </table>
+
   </div>
 
     <script type="text/javascript" src="assets/js/main.js" ></script>

@@ -1,13 +1,41 @@
 body{
-  font-family: lulo clean;
-  color: #2e2e2e;
-  background-color: #9ce4e8;
+
+  font-size: 30px;
+  color: #b2b7dd;
+  background-color: #fff7f0;
+  height: 800px;
 }
 
+.imagen{
+  font-family: sleepyFatCat;
+  width: 100%;
+  height: 100%;
+  float: center;
+  border: 0px solid transparent;
+  border-collapse: collapse;
+}
+
+.imagen{
+  border: 2px solid transparent;
+}
+
+.imagen:hover{
+  background: transparent;
+}
+
+.imagen1{
+  border: 2px solid transparent;
+}
+
+.imagen1:hover{
+  background: transparent;
+}
+
+
+
 .contenido{
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
-  align-content: center;
 }
 
 .result{
@@ -18,6 +46,13 @@ body{
   font-family: lulo clean;
   color: #74b9af;
   text-align: right;
+
+}
+
+.textNum2{
+  font-family: lulo clean;
+  color: #2e2e2e;
+  text-align: center;
 
 }
 
@@ -41,7 +76,7 @@ body{
   background: #c2c2c2;
 }
 
-table{
+.tabla{
   height: 400px;
   text-align: center;
   font-family: lulo clean;
